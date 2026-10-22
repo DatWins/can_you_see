@@ -89,3 +89,7 @@ enableEmoji = true
     languageName = "English"
     contentDir = "content/en"
 
+
+# allow small bits of HTML (blue move lines) inside flashcard answers
+[markup.goldmark.renderer]
+  unsafe = true

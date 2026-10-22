@@ -19,10 +19,12 @@ If the picture gets blurry, look at one corner of the board at a time, or go pie
 The method comes from Andy Soltis, *The Inner Game of Chess*.
 
 ## Games by length
+Every game ends in checkmate, and the last card asks you to find the mating move.
+
 The games are grouped by how many moves they last. Start short and work up:
 
 - 10-move games
 - 10–15 moves
-- 15–20 moves — [Morphy's Opera Game](#opera-game)
+- 15–20 moves — including Morphy's Opera Game
 - 21–30 moves
 - Over 30 moves

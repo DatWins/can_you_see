@@ -27,3 +27,13 @@
   border: 1.5px solid currentColor; background: transparent; color: inherit; cursor: pointer; }
 .flashcard-all:hover { background: #2f6b3a; border-color: #2f6b3a; color: #f0d9b5; }
 @media print { .flashcard__back { filter: none; opacity: 1; max-height: none; } }
+
+/* list of tests in each length menu */
+.post-content ul.test-list { list-style: none; padding: 0; margin: 1em 0; display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.post-content ul.test-list li { margin: 0; }
+.post-content ul.test-list li a { display: block; height: 100%; box-sizing: border-box; padding: .7em 1em; margin: 0;
+  border-radius: 10px; text-decoration: none; border: 1.5px solid currentColor; line-height: 1.35; }
+.post-content ul.test-list li a:hover { background: #2f6b3a; border-color: #2f6b3a; color: #f0d9b5; }
+.test-list .test-title { display: block; font-weight: 700; }
+.test-list .test-meta { display: block; font-size: .78em; opacity: .8; margin-top: .2em; }

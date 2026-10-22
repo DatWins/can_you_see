@@ -7,4 +7,4 @@ header_menu: true
 ---
 Miniatures of about 10 moves — the place to start. Short games are easy to hold in your head from start to finish.
 
-*Games coming soon.*
+{{< tests min="1" max="10" >}}

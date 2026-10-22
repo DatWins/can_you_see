@@ -6,10 +6,13 @@ Hugo site (hugo-scroll theme), deployed to GitHub Pages by `.github/workflows`.
 ## Menus
 Games are grouped by length: `content/en/homepage/02-10-moves.md`, `03-10-15.md`, `04-15-20.md`, `05-21-30.md`, `06-over-30.md`.
 
-## Adding a game
-1. Put the PGN in `tools/can-you-see/` and draw the boards (numbers are plies = half-moves):
-   `py tools\can-you-see\make_boards.py tools\can-you-see\mygame.pgn static\can-you-see\mygame 12 18 24`
-2. In the right length file, add the game to the `submenu` line (`"Name|anchor"`), then a `## Name {#anchor}` heading with steps:
-   `{{< moves "1.e4 e5 2.Nf3" >}}` for the main-line moves, and
-   `{{< flashcard question="Where are the kings?" >}}answer in Markdown{{< /flashcard >}}` for each question.
-3. Board picture: `![Position after 6...Nf6](can-you-see/mygame/m12.svg)`
+## Adding games from a TWIC week
+Needs Python and `py -m pip install chess`. From the repo folder:
+
+1. Find the games that end in checkmate (every mate up to 20 moves, plus the 6 strongest of 21–30 and of 31–45 moves):
+   `py tools\can-you-see\find_mates.py twic1668.pgn picked`
+2. Make a test page for each game:
+   `py tools\can-you-see\make_test.py picked\firouzja-arslanov.pgn content\en\tests\firouzja-arslanov`
+3. Commit and push. Each test appears by itself in the right length menu (10 Moves, 10–15, 15–20, 21–30, Over 30).
+
+Each test lives in `content/en/tests/<name>/` (`index.md`, board pictures, `game.pgn`).

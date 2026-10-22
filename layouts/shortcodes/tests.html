@@ -1,0 +1,15 @@
+{{- /* List of visualization tests whose game length is between min and max moves.
+       Usage: {{< tests min="16" max="20" >}} */ -}}
+{{- $min := int (.Get "min") -}}{{- $max := int (.Get "max") -}}
+{{- $pages := where site.RegularPages "Section" "tests" -}}
+{{- $pages = where $pages "Params.moves" "ge" $min -}}
+{{- $pages = where $pages "Params.moves" "le" $max -}}
+{{- if $pages }}
+<ul class="test-list">
+{{- range sort $pages "Params.moves" }}
+  <li><a href="{{ .RelPermalink }}"><span class="test-title">{{ .Title }}</span><span class="test-meta">{{ .Params.moves }} moves · {{ .Params.event }}</span></a></li>
+{{- end }}
+</ul>
+{{- else }}
+<p><em>Games coming soon.</em></p>
+{{- end }}

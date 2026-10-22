@@ -1,0 +1,185 @@
+---
+title: "Morphy's Opera Game"
+moves: 17
+event: "Paris Opera 1858"
+gamedate: "1858"
+---
+Paul Morphy – Duke Karl of Brunswick & Count Isouard, Paris Opera 1858. White wins in 17 moves. [Download the PGN](game.pgn)
+
+{{< flashcard-all >}}
+
+### Step 1 · Moves 1–3
+
+{{< moves "1.e4 e5 2.Nf3 d6 3.d4 Bg4" >}}
+
+{{< flashcard question="What does the pawn structure look like in the center?" >}}
+White has two pawns side by side on **e4 and d4**. Black has **e5 and d6** (the Philidor Defence). White's d4 pawn attacks e5, and e5 attacks d4.
+
+Every other pawn is still at home: White's on the 2nd rank, Black's on the 7th.
+{{< /flashcard >}}
+
+{{< flashcard question="Which pieces have been brought out?" >}}
+Only two — **White: knight f3. Black: bishop g4.** Everything else is still on its first square.
+{{< /flashcard >}}
+
+{{< flashcard question="What is the bishop on g4 doing?" >}}
+It **pins the knight on f3** to the White queen on d1. If the knight moves, Black plays ...Bxd1.
+{{< /flashcard >}}
+
+### Step 2 · Moves 4–6
+
+{{< moves "4.dxe5 Bxf3 5.Qxf3 dxe5 6.Bc4 Nf6" >}}
+
+{{< flashcard question="What does the pawn structure look like now?" >}}
+Both d-pawns are gone, so the **d-file is wide open**. Seven pawns each:
+
+| | Pawns |
+|---|---|
+| White | a2 b2 c2 **e4** f2 g2 h2 |
+| Black | a7 b7 c7 **e5** f7 g7 h7 |
+
+The center is just e4 against e5.
+{{< /flashcard >}}
+
+{{< flashcard question="Which pieces have been brought out?" >}}
+**White:** queen **f3** and bishop **c4**. The f3 knight is gone (traded for the g4 bishop).
+**Black:** knight **f6**. The light-squared bishop is gone.
+
+Still at home — White: Nb1, Bc1, both rooks. Black: Nb8, Bf8, Qd8, both rooks.
+{{< /flashcard >}}
+
+{{< flashcard question="Where are the kings?" >}}
+Both kings are still on their starting squares, **e1 and e8**. Nobody has castled yet.
+{{< /flashcard >}}
+
+{{< flashcard question="Which file is open?" >}}
+The **d-file**. Both d-pawns have left the board (White's d4 took on e5, Black's d6 took back), so no pawns stand on it from d1 to d8.
+{{< /flashcard >}}
+
+{{< flashcard question="Which pieces haven't moved from their starting squares yet?" >}}
+**White:** rook a1, knight b1, bishop c1, king e1, rook h1.
+**Black:** rook a8, knight b8, queen d8, king e8, bishop f8, rook h8.
+{{< /flashcard >}}
+
+{{< flashcard question="What are White's queen and bishop both aiming at — and what stops them?" >}}
+**f7.** Qf3 and Bc4 both point at it. Black's **6...Nf6 blocks the queen's path** along the f-file. Material is still equal (bishop for knight, pawn for pawn).
+{{< /flashcard >}}
+
+**Check your picture** — the position after 6...Nf6:
+
+![Position after 6...Nf6](m12.svg)
+
+### Step 3 · Moves 7–9
+
+{{< moves "7.Qb3 Qe7 8.Nc3 c6 9.Bg5 b5" >}}
+
+{{< flashcard question="Where is every piece? Fill in the table in your head: pawns, knights, bishops, rooks, queen, king." >}}
+| | White | Black |
+|---|---|---|
+| Pawns | a2 b2 c2 e4 f2 g2 h2 | a7 **b5 c6** e5 f7 g7 h7 |
+| Knights | **c3** | b8 f6 |
+| Bishops | c4 **g5** | f8 |
+| Rooks | a1 h1 | a8 h8 |
+| Queen | **b3** | **e7** |
+| King | e1 | e8 |
+
+![Position after 9...b5](m18.svg)
+{{< /flashcard >}}
+
+{{< flashcard question="Why did Black play 7...Qe7?" >}}
+7.Qb3 lined up the queen with the c4 bishop against **f7** (and also hit b7). The queen on e7 **guards f7**.
+{{< /flashcard >}}
+
+{{< flashcard question="Which White piece is attacked, and which Black piece is pinned?" >}}
+The pawn on **b5 attacks the bishop on c4**. The **knight on f6 is pinned** to the queen on e7 by the bishop on g5.
+{{< /flashcard >}}
+
+{{< flashcard question="Look at one corner: describe Black's queenside (the a8 corner)." >}}
+Rook **a8** and knight **b8** are still at home. The c8 bishop is gone (traded on f3).
+Pawns: **a7** at home, **b5** and **c6** have moved up. The squares b7, c7 and c8 are empty — Black's queenside is loose, and the b5 pawn is attacked by the c3 knight.
+{{< /flashcard >}}
+
+### Step 4 · Moves 10–12
+
+{{< moves "10.Nxb5 cxb5 11.Bxb5+ Nbd7 12.O-O-O Rd8" >}}
+
+{{< flashcard question="Where is every piece now? Pawns, knights, bishops, rooks, queen, king." >}}
+| | White | Black |
+|---|---|---|
+| Pawns | a2 b2 c2 e4 f2 g2 h2 | a7 e5 f7 g7 h7 |
+| Knights | — | **d7** f6 |
+| Bishops | **b5** g5 | f8 |
+| Rooks | **d1** h1 | **d8** h8 |
+| Queen | b3 | e7 |
+| King | **c1** | e8 |
+
+![Position after 12...Rd8](m24.svg)
+{{< /flashcard >}}
+
+{{< flashcard question="What is the material situation?" >}}
+White gave up a knight for two pawns, so **White is a piece down**: White has Q, 2R, 2B and 7 pawns; Black has Q, 2R, B, 2N and 5 pawns.
+{{< /flashcard >}}
+
+{{< flashcard question="Where are the kings, and why are both Black knights stuck?" >}}
+White castled queenside: **king c1**, rook d1 on the open d-file. Black's king is still on **e8**.
+
+The **d7 knight is pinned to the king** by the b5 bishop. The **f6 knight is pinned to the queen** by the g5 bishop.
+{{< /flashcard >}}
+
+{{< flashcard question="Which files are open now?" >}}
+The **d-file** is fully open, and both sides have a rook on it: White's **d1** and Black's **d8**, with the pinned knight on **d7** between them.
+White also has the **b- and c-files** half open (Black has no b- or c-pawn left).
+{{< /flashcard >}}
+
+{{< flashcard question="Which pieces still haven't moved?" >}}
+**White:** only the **h1 rook**.
+**Black:** king **e8**, bishop **f8** and rook **h8** — Black's whole kingside is still asleep.
+{{< /flashcard >}}
+
+{{< flashcard question="Look at one corner: describe White's castled position." >}}
+King **c1**, rook **d1** next to it, pawns **a2 b2 c2** in front. The squares b1 and d2 are empty, and the queen on **b3** stands close by.
+{{< /flashcard >}}
+
+### Step 5 · Moves 13–16
+
+{{< moves "13.Rxd7 Rxd7 14.Rd1 Qe6 15.Bxd7+ Nxd7 16.Qb8+ Nxb8" >}}
+
+{{< flashcard question="Where is every piece now? Pawns, knights, bishops, rooks, queen, king." >}}
+| | White | Black |
+|---|---|---|
+| Pawns | a2 b2 c2 e4 f2 g2 h2 | a7 e5 f7 g7 h7 |
+| Knights | — | **b8** |
+| Bishops | g5 | f8 |
+| Rooks | d1 | h8 |
+| Queen | — (sacrificed on b8) | **e6** |
+| King | c1 | e8 |
+
+![Position after 16...Nxb8](m32.svg)
+{{< /flashcard >}}
+
+{{< flashcard question="Who is ahead in material?" >}}
+**Black, by a lot.** White has only a rook and a bishop left. Black has a queen, a rook, a bishop and a knight. But it's White's move…
+{{< /flashcard >}}
+
+{{< flashcard question="Which Black pieces have never moved in the whole game?" >}}
+The king **e8**, the bishop **f8** and the rook **h8**. (No White piece is still on its starting square.)
+{{< /flashcard >}}
+
+{{< flashcard question="Look at the corner around Black's king. Which empty squares does White control?" >}}
+Around the king on e8: bishop **f8**, pawns **f7 g7 h7**, rook **h8**; the queen is on **e6**.
+The empty squares **d7, d8 and e7** are all covered by White: the rook on d1 sweeps the open d-file (d7, d8) and the bishop on g5 hits **e7 and d8**.
+{{< /flashcard >}}
+
+### Final question
+
+{{< flashcard question="White to move. What is the checkmate that finishes the game?" >}}
+{{< moves "17.Rd8#" >}}
+
+The rook checks along the 8th rank and is protected by the **g5 bishop** (the f6 knight has left, so the diagonal g5–d8 is open).
+
+- The king can't take the rook — the bishop guards it.
+- **e7** is covered by the bishop, **d7** by the rook, **f8** holds Black's own bishop.
+- Nothing can capture on d8 or block: the knight on b8 and the queen on e6 can't reach it.
+
+![Final position after 17.Rd8#](m33.svg)
+{{< /flashcard >}}

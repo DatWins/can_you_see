@@ -1,0 +1,20 @@
+{{- /*
+  Flashcard: question on the front, answer hidden until clicked.
+  Based on Shay Nehmad's Hugo flashcard shortcode (mrnice.dev).
+  Usage:
+    {{< flashcard question="Where are the kings?" >}}
+    The answer, in **Markdown** (tables and pictures work too).
+    {{< /flashcard >}}
+*/ -}}
+{{- $q := .Get "question" -}}
+{{- if not $q }}{{ errorf "flashcard: missing question= at %s" .Position }}{{ end -}}
+{{- $id := printf "fc-%s-%d" (substr (sha1 $q) 0 8) .Ordinal -}}
+<div class="flashcard">
+  <button type="button" class="flashcard__front" aria-expanded="false" aria-controls="{{ $id }}" onclick="toggleAnswer(this)">
+    <span class="flashcard__q">{{ $q | markdownify }}</span>
+    <span class="flashcard__hint"><span class="show">Click to see the answer</span><span class="hide">Click to hide the answer</span></span>
+  </button>
+  <div id="{{ $id }}" class="flashcard__back" aria-hidden="true">
+    {{ .Inner | .Page.RenderString (dict "display" "block") }}
+  </div>
+</div>

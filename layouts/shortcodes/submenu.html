@@ -1,0 +1,17 @@
+{{- /*
+  Sub menu of openings for one section.
+  Usage: {{< submenu "Ruy Lopez" "Philidor Defence|philidor-defence" >}}
+  "Name|anchor" = has a tree (clickable, jumps to that heading on the page)
+  "Name"        = no tree yet (shown faded)
+*/ -}}
+<nav class="submenu" aria-label="Openings in this group">
+{{- range .Params }}
+  {{- $parts := split . "|" }}
+  {{- $name := index $parts 0 }}
+  {{- if gt (len $parts) 1 }}
+  <a class="sub-item ready" href="#{{ index $parts 1 }}">{{ $name }}</a>
+  {{- else }}
+  <span class="sub-item soon" title="Tree coming soon">{{ $name }}</span>
+  {{- end }}
+{{- end }}
+</nav>

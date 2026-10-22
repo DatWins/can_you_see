@@ -1,0 +1,29 @@
+/* Flashcards in the wooden-board colours of My Opening Trees */
+.flashcard { margin: 1em 0 1.3em; border-radius: 12px; overflow: hidden;
+  background: #fbf3e4; color: #3b2416; box-shadow: 0 0 0 2px #b58863, 0 4px 14px rgba(59,36,22,.18); }
+.flashcard__front { display: block; width: 100%; margin: 0; border: 0; cursor: pointer; text-align: left;
+  font: inherit; color: #f0d9b5; background: #3b2416; padding: .75em 1em .65em 3em; position: relative; }
+.flashcard__front::before { content: "?"; position: absolute; left: .75em; top: .62em; width: 1.5em; height: 1.5em;
+  border-radius: 50%; background: #f0d9b5; color: #3b2416; font-weight: 700; text-align: center; line-height: 1.5em; font-size: .9em; }
+.flashcard__front[aria-expanded="true"]::before { content: "✓"; background: #2f6b3a; color: #f0d9b5; }
+.flashcard__front:hover, .flashcard__front:focus-visible { background: #2f6b3a; outline: none; }
+.flashcard__q p { margin: 0; font-weight: 600; }
+.flashcard__hint { display: block; font-size: .72em; opacity: .75; margin-top: .25em; letter-spacing: .03em; }
+.flashcard__hint .hide, .flashcard__front[aria-expanded="true"] .flashcard__hint .show { display: none; }
+.flashcard__front[aria-expanded="true"] .flashcard__hint .hide { display: inline; }
+.flashcard__back { padding: .3em 1.1em .5em; filter: blur(7px); opacity: .45; user-select: none;
+  pointer-events: none; max-height: 7em; overflow: hidden; transition: filter .35s, opacity .35s; }
+.flashcard__back.unblur { filter: none; opacity: 1; user-select: auto; pointer-events: auto; max-height: none; }
+.flashcard__back p { margin: .6em 0; }
+.flashcard__back table { border-collapse: collapse; margin: .7em 0; font-size: .92em; width: 100%; max-width: 640px; }
+.flashcard__back th, .flashcard__back td { border: 1px solid #d8bf98; padding: .35em .6em; text-align: left; vertical-align: top; }
+.flashcard__back th { background: #f0d9b5; }
+.flashcard__back td:first-child { font-weight: 700; white-space: nowrap; }
+.post-content img[src*="can-you-see/"] { display: block; width: 100%; max-width: 360px; height: auto; margin: .8em 0;
+  border-radius: 6px; box-shadow: 0 4px 14px rgba(59,36,22,.3); }
+.post-content .moves { font-size: 1.15em; font-weight: 700; color: #1d4fa3; letter-spacing: .01em; }
+.post-holder.dark .post-content .moves { color: #9fc3ff; }
+.flashcard-all { font: inherit; font-size: .8em; padding: 6px 14px; margin: 0 6px .4em 0; border-radius: 999px;
+  border: 1.5px solid currentColor; background: transparent; color: inherit; cursor: pointer; }
+.flashcard-all:hover { background: #2f6b3a; border-color: #2f6b3a; color: #f0d9b5; }
+@media print { .flashcard__back { filter: none; opacity: 1; max-height: none; } }

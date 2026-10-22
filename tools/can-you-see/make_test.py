@@ -373,8 +373,11 @@ def make(pgn_path, out_dir):
         v = h.get(x, "")
         return f" ({v})" if v.isdigit() else ""
     title = f"{white.replace(',', ', ').replace(',  ', ', ')} – {black.replace(',', ', ').replace(',  ', ', ')}"
-    info = (f"{white}{elo('WhiteElo')} – {black}{elo('BlackElo')} · {h.get('Event', '')}, round {h.get('Round', '?')}, "
-            f"{h.get('Date', '').replace('.??', '')}. The game ends in checkmate on move {nmoves}. "
+    rnd = h.get("Round", "?")
+    rnd = f", round {rnd}" if rnd not in ("?", "-", "") else ""
+    date = h.get("Date", "").replace(".??", "").replace("????", "")
+    info = (f"{white}{elo('WhiteElo')} – {black}{elo('BlackElo')} · {h.get('Event', '')}{rnd}"
+            f"{', ' + date if date else ''}. The game ends in checkmate on move {nmoves}. "
             f"[Download the PGN](game.pgn)")
     front = (f'---\ntitle: "{title}"\nmoves: {nmoves}\nevent: "{h.get("Event", "")}"\n'
              f'gamedate: "{h.get("Date", "").replace(".??", "")}"\n---\n')

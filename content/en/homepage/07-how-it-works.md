@@ -2,7 +2,7 @@
 title: "How It Works"
 header_menu_title: "How It Works"
 navigation_menu_title: "How It Works"
-weight: 6
+weight: 7
 header_menu: true
 ---
 Each game starts as a PGN file. The board pictures are drawn from it with python-chess, and the questions sit on flashcards you click to reveal.

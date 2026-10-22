@@ -21,7 +21,8 @@ The method comes from Andy Soltis, *The Inner Game of Chess*.
 ## Games by length
 The games are grouped by how many moves they last. Start short and work up:
 
-- Under 15 moves
+- 10-move games
+- 10–15 moves
 - 15–20 moves — [Morphy's Opera Game](#opera-game)
 - 21–30 moves
 - Over 30 moves

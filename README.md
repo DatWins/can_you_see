@@ -4,7 +4,7 @@ Chess visualization training: read a few moves, play them in your head, then cli
 Hugo site (hugo-scroll theme), deployed to GitHub Pages by `.github/workflows`.
 
 ## Menus
-Games are grouped by length: `content/en/homepage/02-under-15.md`, `03-15-20.md`, `04-21-30.md`, `05-over-30.md`.
+Games are grouped by length: `content/en/homepage/02-10-moves.md`, `03-10-15.md`, `04-15-20.md`, `05-21-30.md`, `06-over-30.md`.
 
 ## Adding a game
 1. Put the PGN in `tools/can-you-see/` and draw the boards (numbers are plies = half-moves):
